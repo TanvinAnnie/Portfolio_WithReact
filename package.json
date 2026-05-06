@@ -3,26 +3,30 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "react-router build",
-    "dev": "react-router dev",
-    "start": "react-router-serve ./build/server/index.js",
+    "build": "node init && react-router build",
+    "dev": "node init && react-router dev",
+    "start": "node init && react-router-serve ./build/server/index.js",
     "typecheck": "react-router typegen && tsc"
   },
   "dependencies": {
     "@react-router/node": "7.14.0",
     "@react-router/serve": "7.14.0",
+    "dotenv": "^8.2.0",
     "isbot": "^5.1.36",
+    "node-fetch": "^3.3.2",
     "react": "^19.2.4",
     "react-dom": "^19.2.4",
-    "react-router": "7.14.0"
+    "react-icons": "^5.6.0",
+    "react-router": "7.14.0",
+    "react-router-dom": "^7.15.0"
   },
   "devDependencies": {
     "@react-router/dev": "7.14.0",
-    "@tailwindcss/vite": "^4.2.2",
+    "@tailwindcss/vite": "^4.2.4",
     "@types/node": "^22",
     "@types/react": "^19.2.14",
     "@types/react-dom": "^19.2.3",
-    "tailwindcss": "^4.2.2",
+    "tailwindcss": "^4.2.4",
     "typescript": "^5.9.3",
     "vite": "^8.0.3"
   }
